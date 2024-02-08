@@ -19,26 +19,26 @@ tf.addEventListener('submit', function(e) {
   document.getElementById('tweet-content').value = '';
 });
 
-(document).ready(function() {
-    $('#replyForm').submit(function(event) {
-      event.preventDefault(); // Prevent form submission
+// (document).ready(function() {
+//     $('#replyForm').submit(function(event) {
+//       event.preventDefault(); // Prevent form submission
   
-      // Get the reply text and tweet ID
-      var replyText = $('#replyText').val();
-      var tweetId = '<YOUR_TWEET_ID>';
+//       // Get the reply text and tweet ID
+//       var replyText = $('#replyText').val();
+//       var tweetId = '<YOUR_TWEET_ID>';
   
-      // Send the reply to the server
-      $.ajax({
-        url: '/reply',
-        type: 'POST',
-        data: { text: replyText, tweetId: tweetId },
-        success: function(response) {
-          // Do something with the response
-        },
-        error: function() {
-          // Handle errors
-        }
-      });
-    });
-  });
+//       // Send the reply to the server
+//       $.ajax({
+//         url: '/reply',
+//         type: 'POST',
+//         data: { text: replyText, tweetId: tweetId },
+//         success: function(response) {
+//           // Do something with the response
+//         },
+//         error: function() {
+//           // Handle errors
+//         }
+//       });
+//     });
+//   });
   
